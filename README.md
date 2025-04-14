@@ -18,19 +18,15 @@ Hay que pasar a esta: https://www.visualcrossing.com/weather-api/
 
 - Proceso API:
 
-  > 💡 **Nota**:
-  > 
-  > Estoy pensando en usar para el dia actual tanto de la list como de located [app history](https://openweathermap.org/api/one-call-3#history) el enviar la fecha actual directamente, ya que la respuesta es mucho mas concisa y me da menos datos que la peticion de los datos de hoy.
-
   - **weather-list**:
-      1. Necesito un **json** con todas las ciudades de españa.
-      2. Usar [geocoding-api](https://openweathermap.org/api/geocoding-api) para obtener la **latitud** y **longitud** de cada una.
-      3. Con esos dos datos obtener el tiempo antual de cada ciudad en [openweathermap](https://openweathermap.org/api/one-call-3#start).
+
   - **weather-located**:
-      1. Recibe la longitud y latitud en la url.
-      2. Carga a traves de [openweathermap](https://openweathermap.org/api/one-call-3#start) el tiempo actual.
-      3. A traves de la lista de 4 dias (es lo maximo a la que llega la api) en el futuro cargaremos con esa date cad prevision en el componente de esa ciudad.
+    Para esto tenemos el poder decir a cuantos [dias en el futuro queremos el tiempo de una zona](https://www.visualcrossing.com/resources/documentation/weather-api/using-the-time-period-parameter-to-specify-dynamic-dates-for-weather-api-requests/) 
+
 
 - Usar api:
-  1. Registrarse en la api: https://home.openweathermap.org/users/sign_up
-  2. Obtener la key de la api
+  - `next<value>days`
+  - `unitGroup = metric` para tener unidades europeas en el resultado.
+  - `lang = es` para tener la respuesta en español.
+  - `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/`
+  - `[location]/[today / next7days]?key=YOUR_API_KEY`
