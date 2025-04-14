@@ -8,9 +8,4 @@ import { environment } from 'src/environments/environments';
 })
 export class AppComponent {
   title = 'pp';
-
-  constructor() {
-    console.log(environment.apiKey);
-  }
-
 }
