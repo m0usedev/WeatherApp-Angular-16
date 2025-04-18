@@ -1,0 +1,26 @@
+.weather-card-info-c {
+  border: 1px solid red;
+  padding: 20px 30px;
+
+  /* Tamaño de tarjeta: 3 por fila */
+  flex: 0 0 calc(33.333% - 13.33px);
+  /* Ajusta para compensar el gap */
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: white;
+  }
+}
