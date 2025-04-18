@@ -1,0 +1,8 @@
+<nav class="nav-weather-c">
+  <a routerLink="">
+    <img class="logo" src="../../../assets/image/weather-app.png">
+  </a>
+
+  <input [formControl]="searchInput" class="input-nav" type="text" placeholder="Comunidad..."
+    (keypress)="search(input.value)" #input>
+</nav>

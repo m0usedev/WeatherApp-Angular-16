@@ -1,0 +1,33 @@
+.nav-weather-c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 2rem;
+
+  box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3);
+
+  .logo {
+    width: 60px;
+  }
+
+  .input-nav {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    padding: 5px;
+    font-size: medium;
+    transition: 0.2s;
+
+    &:focus {
+      transition: 0.2s;
+      outline: none;
+      box-shadow:
+        5px 5px 10px rgba(255, 255, 255, 0.3),
+        -5px -5px 10px rgba(255, 255, 255, 0.3);
+    }
+  }
+}
