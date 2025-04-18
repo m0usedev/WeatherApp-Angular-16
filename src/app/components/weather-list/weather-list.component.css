@@ -1,0 +1,9 @@
+.weather-list-c {
+  .list {
+    width: auto;
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

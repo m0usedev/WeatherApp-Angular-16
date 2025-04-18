@@ -1,0 +1,13 @@
+<section class="weather-list-c">
+
+  <div *ngIf="weatherList != undefined; else elseweatherList" class="list">
+    <div *ngFor="let loc of weatherList">
+      <app-weather-card-info [locate]="loc"></app-weather-card-info>
+    </div>
+  </div>
+
+  <ng-template #elseweatherList class="error-list">
+    <h1>No hay resultados.</h1>
+  </ng-template>
+
+</section>
